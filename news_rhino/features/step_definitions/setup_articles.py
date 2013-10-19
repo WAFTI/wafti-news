@@ -14,4 +14,5 @@ def set_article_headline(step, headline):
 @step(u'And that article has id (\d+)')
 def set_article_pk(step, pk):
     world.article.pk = pk
+    world.article.save()
 

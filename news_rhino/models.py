@@ -2,4 +2,4 @@ from django.db import models
 
 
 class Article(models.Model):
-    pass
+    headline = models.CharField(max_length=300)
