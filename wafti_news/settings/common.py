@@ -24,7 +24,7 @@ DATABASES = {
     }
 }
 
-DATABASES = {'default': dj_database_url.config(default='sqlite://:memory:')}
+DATABASES = {'default': dj_database_url.config(default='sqlite:////tmp/wafti-news.db')}
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
@@ -160,4 +160,12 @@ LOGGING = {
             'propagate': True,
         },
     }
+}
+
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework.renderers.TemplateHTMLRenderer',
+        'rest_framework.renderers.JSONRenderer',
+        'rest_framework.renderers.BrowsableAPIRenderer',
+    )
 }
