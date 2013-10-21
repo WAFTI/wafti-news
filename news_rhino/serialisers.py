@@ -3,6 +3,9 @@ from rest_framework import serializers
 
 
 class ArticleSerialiser(serializers.HyperlinkedModelSerializer):
+
+    html = serializers.Field(source='html')
+
     class Meta:
         model = Article
-        fields = ()
+        fields = ('headline', 'html')

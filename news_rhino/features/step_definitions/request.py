@@ -5,6 +5,4 @@ from lxml import html
 @step(r'I visit "(.*)"')
 def access_url(step, url):
     response = world.browser.get(url, Accept='text/html')
-    print type(response)
-    print response
     world.dom = html.fromstring(response.content)

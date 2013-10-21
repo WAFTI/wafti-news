@@ -6,3 +6,11 @@ Scenario: Article title appears as subheading
   And that article has id 1
   When I visit "/news/1/"
   Then I see the headline "This is a test article"
+
+Scenario: Single-paragraph story content appears
+  Given the site contains an article
+  And that article has headline "This is a test article"
+  And that article has 1 paragraph of content
+  And that article has id 1
+  When I visit "/news/1/"
+  Then I see the content

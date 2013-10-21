@@ -1,7 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>{{data.headline}}</h2>
+<article>
+  <h2>{{data.headline}}</h2>
+  <div>
+    {{data.html|safe}}
+  </div>
+</article>
 {% endblock %}
-
-

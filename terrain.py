@@ -11,4 +11,3 @@ def initial_setup(server):
 @before.all
 def set_browser():
     world.browser = Client()
-

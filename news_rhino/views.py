@@ -16,7 +16,10 @@ class ArticleViewSet(viewsets.ModelViewSet):
     serializer_class = ArticleSerialiser
 
     def retrieve(self, request, *args, **kwargs):
-        response = super(ArticleViewSet, self).retrieve(request, *args, **kwargs)
+
+        response = super(ArticleViewSet, self).retrieve(
+            request, *args, **kwargs)
+
         if request.accepted_renderer.format == 'html':
             return Response({'data': response.data},
                             template_name='news_rhino/article_detail.html')
