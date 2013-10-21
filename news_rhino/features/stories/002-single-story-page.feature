@@ -18,3 +18,4 @@ Scenario Outline: Stories of various lengths appear properly
   Examples:
     | n |
     | 1 |
+    | 4 |
