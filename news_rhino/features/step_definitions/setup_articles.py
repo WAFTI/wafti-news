@@ -19,7 +19,7 @@ def set_article_pk(step, pk):
     world.article.save()
 
 
-@step(u'And that article has (\d+) paragraph of content')
+@step(u'And that article has (\d+) paragraph\(s\) of content')
 def generate_content(step, paragraph_count):
     world.content = "\n\n".join(get_paragraphs(int(paragraph_count)))
     world.article.content = world.content
