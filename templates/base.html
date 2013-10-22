@@ -1,6 +1,76 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>WAFTI News</title>
+    <script src="{{ STATIC_URL }}js/jquery-1.10.2.js"></script>
+    <script src="{{ STATIC_URL }}js/jquery-ui.js"></script>
+    <script src="http://requirejs.org/docs/release/2.0.4/minified/require.js"></script>
+    <script src="{{ STATIC_URL }}js/modernizr-latest.js"></script>
+
+    <script>
+            var Aloha = window.Aloha || ( window.Aloha = {} );
+            Aloha.settings = {
+                locale: 'en',
+                sidebar: {
+                  disabled: true
+                },
+                repositories: {
+                    linklist: {
+                        data: [
+                            { name: 'CreateJS Website', url:'http://createjs.org', type:'website' },
+                            { name: 'CreateJS on Github', url:'https://github.com/bergie/create', type:'website' },
+                            { name: 'Aloha Developers Wiki', url:'https://github.com/alohaeditor/Aloha-Editor/wiki', type:'website' },
+                            { name: 'Aloha Editor - The HTML5 Editor', url:'http://aloha-editor.org', type:'website' },
+                            { name: 'Aloha Editor Demos', url:'http://aloha-editor.org/demos.php', type:'website' },
+                            { name: 'Aloha Editor Logo', url:'http://aloha-editor.org/logo/Aloha%20Editor%20HTML5%20contenteditable%20transparent%20512.png', type:'image' }
+                        ]
+                    }
+                },
+                plugins: {
+                    format: {
+                        config: [  'b', 'i', 'p', 'sub', 'sup', 'del', 'title', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'pre', 'removeFormat' ]
+                }
+            }
+        }
+    </script>
+    <script src="http://cdn.aloha-editor.org/latest/lib/aloha.js"
+            data-aloha-plugins="common/ui,
+                                common/commands,
+                                common/format,
+                                common/table,
+                                common/list,
+                                common/link,
+                                common/block,
+                                common/undo,
+                                common/contenthandler,
+                                common/paste,
+                                common/abbr"></script>
+    <link rel="stylesheet" href="http://cdn.aloha-editor.org/latest/css/aloha.css" />
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/create-ui.css" />
+
+    <script src="{{ STATIC_URL }}js/underscore-min.js"></script>
+    <script src="{{ STATIC_URL }}js/backbone-min.js"></script>
+    <script src="{{ STATIC_URL }}js/vie-2.1.0.js"></script>
+    <script src="{{ STATIC_URL }}js/create.js"></script>
+    <script>
+            jQuery(document).ready(function() {
+              jQuery('body').midgardCreate({
+                url: function (model) {
+                  console.log(this.getSubjectUri());
+                  return this.getSubjectUri();
+                },
+                // Use Aloha Editor everywhere
+                editorWidgets: {
+                  default: 'aloha',
+                },
+                editorOptions: {
+                  aloha: {
+                    widget: 'alohaWidget'
+                  }
+                }
+              });
+            });
+    </script>
   </head>
   <body>
   <header>
