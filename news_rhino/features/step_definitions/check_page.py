@@ -8,21 +8,22 @@ from formencode.doctest_xml_compare import xml_compare
 
 @step(u'Then I see the header "([^"]*)"')
 def see_header(step, text):
-    header = world.dom.cssselect('h1')[0]
-    assert_that(header.text, is_(text))
+    assert world.browser.is_text_present(text)
 
 
 @step(u'Then I see the headline "([^"]*)"')
 def see_headline(step, text):
-    header = world.dom.cssselect('h2')[0]
-    assert_that(header.text, is_(text))
+    assert world.browser.is_text_present(text)
 
 
 @step(u'Then I see the content')
 def then_i_see_the_content(step):
+
     expected = html.fromstring(
-        "<div>%s</div>" % markup.markdown(world.content))
-    actual = world.dom.cssselect('article div')[0]
+        '<div property="<http://schema.org/text>">%s</div>' % markup.markdown(world.content))
+
+    actual = html.fromstring(
+        world.browser.find_by_css('article div').outer_html)
 
     reporter = lambda x: sys.stdout.write(x + "\n")
     assert xml_compare(expected, actual, reporter)
