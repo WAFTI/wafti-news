@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>WAFTI News</title>
     <script src="{{ STATIC_URL }}js/jquery-1.10.2.js"></script>
     <script src="{{ STATIC_URL }}js/jquery-ui.js"></script>
@@ -32,6 +32,7 @@
                 }
             }
         }
+
     </script>
     <script src="http://cdn.aloha-editor.org/latest/lib/aloha.js"
             data-aloha-plugins="common/ui,
@@ -45,14 +46,18 @@
                                 common/contenthandler,
                                 common/paste,
                                 common/abbr"></script>
-    <link rel="stylesheet" href="http://cdn.aloha-editor.org/latest/css/aloha.css" />
-    <link rel="stylesheet" href="{{ STATIC_URL }}css/create-ui.css" />
+    <link rel="stylesheet" href="http://cdn.aloha-editor.org/latest/css/aloha.css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/create-ui.css"/>
 
     <script src="{{ STATIC_URL }}js/underscore-min.js"></script>
     <script src="{{ STATIC_URL }}js/backbone-min.js"></script>
     <script src="{{ STATIC_URL }}js/vie-2.1.0.js"></script>
     <script src="{{ STATIC_URL }}js/create.js"></script>
     <script>
+jQuery('body').midgardToolbar({
+  display: 'minimized'
+});
+
             jQuery(document).ready(function() {
               jQuery('body').midgardCreate({
                 url: function (model) {
@@ -70,12 +75,18 @@
                 }
               });
             });
+
     </script>
-  </head>
-  <body>
-  <header>
+
+    <link href='http://fonts.googleapis.com/css?family=Fondamento' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Belleza&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/wafti.css"/>
+</head>
+<body>
+<header>
     <h1>WAFTI News</h1>
-  </header>
-    {% block content %}{% endblock %}
-  </body>
+</header>
+{% block content %}{% endblock %}
+</body>
 </html>

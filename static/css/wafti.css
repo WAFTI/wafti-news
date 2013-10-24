@@ -1,0 +1,15 @@
+header h1 {
+    font-family: 'Fondamento', cursive;
+}
+
+article {
+    max-width: 480px;
+}
+
+article h2 {
+    font-family: 'Belleza', sans-serif;
+}
+
+article div {
+    font-family: 'Open Sans', sans-serif;
+}
