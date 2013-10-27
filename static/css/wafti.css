@@ -1,19 +1,40 @@
 body {
     background-color: white;
+    color: #242323;
+    margin: 0;
+}
+
+header {
+    background-color: #8C1018;
+    color: #D1CDCD;
+    padding-top: 68px;
+    padding-bottom: 8px;
 }
 
 header h1 {
     font-family: 'Fondamento', cursive;
+    font-size: 200%;
+    margin: 0 auto;
+    max-width: 480px;
 }
 
 article {
     max-width: 480px;
+    margin: 0 auto;
 }
 
 article h2 {
     font-family: 'Belleza', sans-serif;
+    font-size: 150%;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
 }
 
 article div {
     font-family: 'Open Sans', sans-serif;
+}
+
+article div p {
+    margin-bottom: 1em;
+    line-height: 110%;
 }
