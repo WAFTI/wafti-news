@@ -36,7 +36,7 @@
           }
         });
 
-      jQuery('body').midgardCreate('setEditorForProperty', 'dcterms:title', 'title');
+      jQuery('body').midgardCreate('setEditorForProperty', 'http://schema.org/headline', 'title');
 
       });
 
@@ -49,7 +49,7 @@
 </head>
 <body>
   <header>
-    <h1>WAFTI News</h1>
+    <h1><a href="/">WAFTI News</a></h1>
   </header>
   {% block content %}{% endblock %}
 </body>
