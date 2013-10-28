@@ -1,9 +1,56 @@
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>WAFTI News</title>
-  </head>
-  <body>
-    <h1>WAFTI News</h1>
-    {% block content %}{% endblock %}
-  </body>
+
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/reset.css"/>
+
+    <script src="{{ STATIC_URL }}js/jquery.js"></script>
+    <script src="{{ STATIC_URL }}js/jquery-ui.js"></script>
+    <script src="http://requirejs.org/docs/release/2.0.4/minified/require.js"></script>
+    <script src="{{ STATIC_URL }}js/modernizr-latest.js"></script>
+
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/create-ui.css"/>
+
+    <script src="{{ STATIC_URL }}js/underscore-min.js"></script>
+    <script src="{{ STATIC_URL }}js/backbone-min.js"></script>
+    <script src="{{ STATIC_URL }}js/vie.js"></script>
+    <script src="{{ STATIC_URL }}js/create.js"></script>
+
+    <script src="{{ STATIC_URL }}js/rangy-core.js"></script>
+    <script src="{{ STATIC_URL }}js/hallo.js"></script>
+    <script>
+      jQuery(document).ready(function() {
+        jQuery('body').midgardCreate({
+          url: function (model) {
+            return this.getSubjectUri();
+          }
+        });
+
+        jQuery('body').midgardCreate('configureEditor', 'title', 'halloWidget', {
+          plugins: {
+            halloformat: {},
+            halloblacklist: {
+              tags: ['br']
+            }
+          }
+        });
+
+      jQuery('body').midgardCreate('setEditorForProperty', 'http://schema.org/headline', 'title');
+
+      });
+
+    </script>
+
+    <link href='http://fonts.googleapis.com/css?family=Fondamento' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Belleza&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/wafti.css"/>
+</head>
+<body>
+  <header>
+    <h1><a href="/">WAFTI News</a></h1>
+  </header>
+  {% block content %}{% endblock %}
+</body>
 </html>

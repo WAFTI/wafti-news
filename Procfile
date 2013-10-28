@@ -1,0 +1,1 @@
+web: gunicorn wafti_news.wsgi

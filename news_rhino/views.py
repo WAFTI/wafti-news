@@ -24,3 +24,7 @@ class ArticleViewSet(viewsets.ModelViewSet):
             return Response({'data': response.data},
                             template_name='news_rhino/article_detail.html')
         return response
+
+    def update(self, request, *args, **kwargs):
+        return super(ArticleViewSet, self).update(
+            request, *args, **kwargs)
