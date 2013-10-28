@@ -36,3 +36,5 @@ nosetests.xml
 /wafti-news.db
 /lettuce-django.pid
 /ghostdriver.log
+staticfiles
+venv
