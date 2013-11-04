@@ -10,7 +10,7 @@ class ArticleSerialiser(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Article
-        fields = ('article_id', 'headline', 'content', 'html')
+        fields = ('article_id', 'headline', 'content', 'html', 'url')
 
 
     def restore_fields(self, data, files):

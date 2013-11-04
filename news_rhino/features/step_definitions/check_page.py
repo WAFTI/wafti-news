@@ -37,3 +37,8 @@ def then_the_headline_should_be(step, headline):
 @step(u'Then the headline should still be "([^"]*)"')
 def then_the_headline_should_still_be(step, headline):
     step.then('Then the headline should be "{}"'.format(headline))
+
+
+@step(u'Then the first headline should be "([^"]*)"')
+def check_first_headline(step, headline):
+    assert_that(world.browser.find_by_css('h2').first.text, is_(headline))
