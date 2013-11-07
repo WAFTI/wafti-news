@@ -6,6 +6,7 @@ argparse==1.2.1
 distribute==0.6.24
 dj-database-url==0.2.2
 dj-static==0.0.5
+django-extensions==1.2.5
 django-toolbelt==0.0.1
 djangorestframework==2.3.8
 fuzzywuzzy==0.2
@@ -16,6 +17,7 @@ loremipsum==1.0.2
 lxml==3.2.3
 psycopg2==2.5.1
 selenium==2.37.2
+six==1.4.1
 splinter==0.5.4
 static==0.4
 sure==1.2.2

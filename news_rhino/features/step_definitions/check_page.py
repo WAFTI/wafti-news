@@ -42,3 +42,9 @@ def then_the_headline_should_still_be(step, headline):
 @step(u'Then the first headline should be "([^"]*)"')
 def check_first_headline(step, headline):
     assert_that(world.browser.find_by_css('h2').first.text, is_(headline))
+
+@step(u'(?:Then|And) the (\d+)(?:st|nd|rd) headline should match the (\d+)(?:st|nd|rd) article')
+def then_the_1st_headline_should_match_the_3rd_article(step, headline_index, article_index):
+    actual_headline = world.browser.find_by_css('h2')[int(headline_index) - 1].text
+    expected_headline = world.articles[int(article_index)].headline
+    assert_that(actual_headline, is_(expected_headline))

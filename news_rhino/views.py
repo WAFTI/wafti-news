@@ -11,7 +11,7 @@ def index(request):
 
 
 class ArticleViewSet(viewsets.ModelViewSet):
-    queryset = Article.objects.all()
+    queryset = Article.objects.order_by('-created')
     serializer_class = ArticleSerialiser
 
     def list(self, request, *args, **kwargs):

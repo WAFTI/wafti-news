@@ -12,6 +12,7 @@ def initial_setup(server):
 @before.all
 def set_browser():
     world.browser = Browser('phantomjs')
+    world.articles = {}
 
 @after.all
 def close_browser(_):
