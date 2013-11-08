@@ -119,7 +119,7 @@ a.create-ui-toggle {
 }
 
 /* CREATE UI BUTTONS STYLES START */
-.create-ui-btn {
+.create-ui-btn, .midgard-create-add {
     -moz-border-bottom-colors: none;
     -moz-border-image: none;
     -moz-border-left-colors: none;
@@ -148,6 +148,12 @@ a.create-ui-toggle {
     margin-top: 15px;
     opacity: 0.9;
     filter: alpha(opacity=90); 
+}
+
+.midgard-create-add {
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
 }
 
 .create-ui-btn:hover {

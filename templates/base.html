@@ -23,6 +23,9 @@
       jQuery(document).ready(function() {
         jQuery('body').midgardCreate({
           url: function (model) {
+            if (this.isNew() && this.collection) {
+                return this.collection.url;
+            }
             return this.getSubjectUri();
           }
         });
@@ -36,7 +39,7 @@
           }
         });
 
-      jQuery('body').midgardCreate('setEditorForProperty', 'http://schema.org/headline', 'title');
+      jQuery('body').midgardCreate('setEditorForProperty', '<http://schema.org/headline>', 'title');
 
       });
 

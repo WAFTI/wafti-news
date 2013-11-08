@@ -2,13 +2,16 @@
 
 {% block content %}
 
-{% for article in data %}
-<article about="/news/{{article.article_id}}/">
-  <h2 property="<http://schema.org/headline>">{{article.headline}}</h2>
-  <div property="<http://schema.org/text>">
-    {{article.html|safe}}
-  </div>
-</article>
-{% endfor %}
+<div xmlns:dcterms="http://purl.org/dc/terms/" xmlns:schema="http://schema.org/" about="/news/" rel="dcterms:hasPart">
+    {% for article in data %}
+    <article about="/news/{{article.article_id}}/">
+        <h2 property="schema:headline">{{article.headline}}</h2>
+
+        <div property="schema:text">
+            {{article.html|safe}}
+        </div>
+    </article>
+    {% endfor %}
+</div>
 
 {% endblock %}

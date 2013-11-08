@@ -14,3 +14,13 @@ Feature: Basic front page
     Then the 1st headline should match the 3rd article
     And the 2nd headline should match the 2nd article
     And the 3rd headline should match the 1st article
+
+    Scenario: Can add a post to the front page
+      When I visit "/news/"
+      And I click "Add Article"
+      And I enter the headline "This is a new article"
+      And I add some article content
+      And click "Save"
+      Then the 1st headline should be "This is a new article"
+      And when I visit "/news/" again later
+      Then the 1st headline should still be "This is a new article"
