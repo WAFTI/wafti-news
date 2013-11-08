@@ -2738,7 +2738,7 @@ window.midgardCreate.localize = function (id, language) {
       addButton.click(function () {
         widget.addItem(addButton);
       });
-      jQuery(widget.options.view.el).after(addButton);
+      jQuery(widget.options.view.el).before(addButton);
 
       widget.addButtons.push(addButton);
       widget.checkCollectionConstraints();
@@ -2777,7 +2777,7 @@ window.midgardCreate.localize = function (id, language) {
       if (options === undefined) {
           options = {};
       }
-      var addOptions = _.extend({}, options, { validate: false });
+      var addOptions = _.extend({at: 0}, options, { validate: false });
 
       var itemData = {};
       if (this.options.definition && this.options.definition.range) {
@@ -2802,6 +2802,7 @@ window.midgardCreate.localize = function (id, language) {
           itemData['@type'] = keys[0];
         }
       }
+      console.log(itemData);
       this.options.collection.add(itemData, addOptions);
     }
   });

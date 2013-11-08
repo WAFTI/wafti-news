@@ -39,7 +39,7 @@ def then_the_headline_should_still_be(step, headline):
     step.then('Then the headline should be "{}"'.format(headline))
 
 
-@step(u'Then the first headline should be "([^"]*)"')
+@step(u'Then the (?:first|1st) headline should (?:still )?be "([^"]*)"')
 def check_first_headline(step, headline):
     assert_that(world.browser.find_by_css('h2').first.text, is_(headline))
 
@@ -48,3 +48,4 @@ def then_the_1st_headline_should_match_the_3rd_article(step, headline_index, art
     actual_headline = world.browser.find_by_css('h2')[int(headline_index) - 1].text
     expected_headline = world.articles[int(article_index)].headline
     assert_that(actual_headline, is_(expected_headline))
+
