@@ -55,3 +55,7 @@ def given_the_site_contains_3_basic_articles_added_in_date_order(step):
     create_article(1)
     create_article(2)
     create_article(3)
+
+@step(u'Given the site has no articles')
+def given_the_site_has_no_articles(step):
+    Article.objects.all().delete()
