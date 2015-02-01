@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<article about="/news/{{data.article_id}}/">
+  <h2 property="<http://schema.org/headline>">{{data.headline}}</h2>
+  <div property="<http://schema.org/text>">
+    {{data.html|safe}}
+  </div>
+</article>
+{% endblock %}
