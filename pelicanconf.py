@@ -41,3 +41,5 @@ STATIC_PATHS = ['extra/CNAME']
 EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
     }
+
+DISPLAY_CATEGORIES_ON_MENU=True
