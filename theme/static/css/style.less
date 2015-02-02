@@ -1,0 +1,142 @@
+@import 'grid.less';
+
+@column-width: 60;
+@gutter-width: 20;
+@columns: 12;
+
+@total-width: 100%;
+
+@white: #FFFFFF;
+@black: #130F04;
+@dark:  #716E79;
+@light: #E7E5D3;
+@medium: #B6C3C4;
+
+/* Overall Body */
+
+body {
+    background-color: white;
+    color: @dark;
+    margin: 0;
+    padding-bottom: 64px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Main Header */
+
+body > header {
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-color: @black;
+    color: @light;
+    box-shadow: 0px 10px 2px black;
+    padding: 0;
+    margin-bottom: 2em;
+}
+
+body > header h1 {
+    .column(6);
+    .push(3);
+    font-family: 'Fondamento', cursive;
+    font-size: 250%;
+    background: url('/theme/img/rhino.png') no-repeat bottom right;
+    padding-top: 1em;
+    padding-bottom: 0.2em;
+}
+
+header h1 a {
+    color: @light;
+    text-decoration: none;
+}
+
+/* Main Container */
+
+section#content {
+   .column(4);
+   .push(3);
+}
+
+section#content h2 {
+    font-size: 200%;
+    color: @black;
+}
+
+/* Menu */
+
+nav {
+   .column(2);
+   background-color: @light;
+}
+
+nav ul li {
+    display: block;
+    font-size: 150%;
+    padding: 0.3em;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: @dark;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: @black;
+}
+
+/* Articles */
+
+article {
+    .row(1);
+    .column(12);
+}
+
+section#content article h2 {
+    display: block;
+    font-family: 'Belleza', sans-serif;
+    font-size: 180%;
+    margin-top: 1.6em;
+    margin-bottom: 0.8em;
+    color: @black;
+}
+
+article h2 a {
+    color: @black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+article h2 a:hover {
+    color: @dark;
+}
+
+article p {
+    margin-bottom: 1em;
+    line-height: 110%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+article abbr {
+    color: @medium;
+}
+
+article address {
+    margin-bottom: 0.5em;
+    color: @medium;
+}
+
+article footer {
+    color: @medium;
+    .column(2);
+}
+
+article div.entry-content {
+    .column(10);
+}
+
+article footer p.category {
+    margin-bottom: 0;
+    line-height: 100%;
+}

@@ -29,17 +29,24 @@
     <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
     {% endif %}
         {% endblock head %}
+
     <link href='http://fonts.googleapis.com/css?family=Fondamento' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Belleza&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="{{ SITE_URL }}/theme/css/reset.css">
     <link rel="stylesheet" type="text/css" href="{{ SITE_URL }}/theme/css/style.css">
+
+    <link rel="stylesheet" href="{{ SITE_URL }}/theme/css/style.less" type="text/less" media="screen" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.3.1/less.min.js" type="text/javascript" ></script>
+
   </head>
   
   <body id="index" class="home">
     <header id="banner" class="body">
       <h1><a href="{{ SITEURL }}/">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
     </header><!-- /#banner -->
+    {% block content %}
+    {% endblock %}
     <nav id="menu"><ul>
         {% for title, link in MENUITEMS %}
         <li><a href="{{ link }}">{{ title }}</a></li>
@@ -49,14 +56,12 @@
         <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
         {% endfor %}
         {% else %}
-          {% if DISPLAY_CATEGORIES_ON_MENU %}
+        {% if DISPLAY_CATEGORIES_ON_MENU %}
         {% for cat, null in categories %}
         <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
         {% endfor %}
         {% endif %}
         {% endif %}
     </ul></nav><!-- /#menu -->
-    {% block content %}
-    {% endblock %}
   </body>
 </html>
