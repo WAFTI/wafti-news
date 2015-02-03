@@ -8,7 +8,7 @@ SITEURL = ''
 
 PATH = 'content'
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'Europe/London'
 
 DEFAULT_LANG = 'en-gb'
 
@@ -51,3 +51,6 @@ DEFAULT_DATE='fs'
 MENUITEMS=[
     ('All News', '/'),
 ]
+
+ARTICLE_URL = '{category}/{slug}'
+ARTICLE_SAVE_AS = '{category}/{slug}/index.html'
