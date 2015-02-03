@@ -1,5 +1,6 @@
-Ordinary Britons feel ‘swamped’ with anti-immigrants
-
+title: Ordinary Britons feel ‘swamped’ with anti-immigrants
+author: ChrisH
+date: 2015-02-03
 
 Large numbers of regular hard-working ordinary families complain that they feel ‘swamped’ and ‘overrun’ with anti-immigration policy drives, a study by the think-tank has shown.
 
