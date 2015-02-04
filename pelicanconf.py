@@ -54,3 +54,13 @@ MENUITEMS=[
 
 ARTICLE_URL = '{category}/{slug}'
 ARTICLE_SAVE_AS = '{category}/{slug}/index.html'
+
+USE_LESS_JS = True
+
+
+PLUGIN_PATHS = ['pelican-plugins']
+PLUGINS = ['assets']
+
+ASSET_CONFIG = (
+    ('less_bin', 'lesscpy'),
+)
