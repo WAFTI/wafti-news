@@ -3,11 +3,18 @@ author: Ross
 caption: Cllr. Marsh calls the incident "well crap"
 date: 2009-09-07
 
-An unbalanced man from the village of Tilty, Essex wanted for murdering his own mother in the county last week was picked up by Northumberland authorities today as he was attempting to flee to France.
+An unbalanced man from the village of Tilty, Essex wanted for murdering his own
+mother in the county last week was picked up by Northumberland authorities today
+as he was attempting to flee to France.
 
-Mr. Alan Tiledamage -- a Geography teacher at Braintree Upper School -- was a primary suspect after his mother, Sharon Tiledamage, was found dead in her home in Great Dunmow on Friday. He is currently being questioned by the Morpeth constabulary. 
+Mr. Alan Tiledamage -- a Geography teacher at Braintree Upper School -- was a
+primary suspect after his mother, Sharon Tiledamage, was found dead in her home
+in Great Dunmow on Friday. He is currently being questioned by the Morpeth
+constabulary. 
 
-Mrs. Sharon Tiledamage was found beaten to death by her own loofah in the pagoda in her back garden, just next to the prize-winning gardenias. The gardineas are to have statements taken by officers from Braintree in the next few days.
+Mrs. Sharon Tiledamage was found beaten to death by her own loofah in the pagoda
+in her back garden, just next to the prize-winning gardenias. The gardineas are
+to have statements taken by officers from Braintree in the next few days.
 
 <aside class="sideinfo" markdown="1">
 ## Where did it all go wrong?
@@ -32,10 +39,22 @@ Mrs. Sharon Tiledamage was found beaten to death by her own loofah in the pagoda
 
 Morpeth police are yet to release a statement, except this one:
 
-"We can confirm that Mr. Tiledamage is being held in custody over the death of his mother in Essex. We are taking this matter very seriously as it's a dying shame for anyone to spend their final days in Essex," Sergeant Pepper reads from an edible press release at a press conference held during breaks in the US Open.
+"We can confirm that Mr. Tiledamage is being held in custody over the death of
+his mother in Essex. We are taking this matter very seriously as it's a dying
+shame for anyone to spend their final days in Essex," Sergeant Pepper reads from
+an edible press release at a press conference held during breaks in the US Open.
 
-Harsher penalties were brought in for murder in the county back in November 2008 after the EU Court of Human Rights declared it an "affront to human dignity for anyone's last memories of life on Earth to be of Essex." Several petitions were circulated in Chelmsford to fight the legistlation, but few could write their own name on the sheet.
+Harsher penalties were brought in for murder in the county back in November 2008
+after the EU Court of Human Rights declared it an "affront to human dignity for
+anyone's last memories of life on Earth to be of Essex." Several petitions were
+circulated in Chelmsford to fight the legistlation, but few could write their
+own name on the sheet.
 
-"It's well crap," Councillor Jodie Marsh, Conservative chair of the Essex Country Council, tells WAFTI during a glamour photoshoot. Defiant over the EU ruling, she adds, "I never fort[sic] someone would kill their mum, but Essex is well nice and definitely the best place to do it."
+"It's well crap," Councillor Jodie Marsh, Conservative chair of the Essex
+Country Council, tells WAFTI during a glamour photoshoot. Defiant over the EU
+ruling, she adds, "I never fort[sic] someone would kill their mum, but Essex is
+well nice and definitely the best place to do it."
 
-WAFTI sent several correspondents to Essex to get reactions from family and friends, but only one returned alive. We all wish him a speedy recovery from his injuries to report his findings in due course.
+WAFTI sent several correspondents to Essex to get reactions from family and
+friends, but only one returned alive. We all wish him a speedy recovery from his
+injuries to report his findings in due course.

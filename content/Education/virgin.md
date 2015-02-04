@@ -18,7 +18,7 @@ the Virgin Group will manage two universities, one grammar school, three
 colleges and one art school under the Virgin Scholar brand.
 
 <aside markdown="1">
-## History of "Virgin Scholar"
+### History of "Virgin Scholar"
 
 * In 1996, Sir Richard Branson wins London Art College in a poker tournament. He leaves it largely unchanged, except all "still life" arrangements are switched from bowls of fruit to cans of Virgin Cola.
 * Three years later, Virgin buys Anglia Polytechnic University (now Anglia Ruskin University) and founds the Virgin Scholar brand.
@@ -26,7 +26,7 @@ colleges and one art school under the Virgin Scholar brand.
 * From 2005 onwards, all degrees, certificates and exam results included the Virgin logo and £10 free credit on Virgin Mobile.
 </aside>
 
-## Company Perks
+### Company Perks
 
 Benefits that are brought to a Virgin Scholar institution include discounted
 rates on Virgin Holidays in the Summer, increased signal strength for Virgin
@@ -36,7 +36,7 @@ assimilated into Virgin Radio, campus eating facilities are incorporated into
 Virgin Catering and the top five students in any course are given free balloon
 flights.
 
-## Finance
+### Finance
 
 However, a proposal to provide student loans to Virgin Scholar customers through
 Virgin Money raised at least 7 eyebrows at the Student Loans Company Ltd., the
@@ -49,7 +49,7 @@ New students, however, are warm to the idea of a loan company that will answer
 the phone. "Virgin Mobile customers will be allowed straight through without
 delay," promises an optimistic Branson.
 
-## Epilogue
+### Epilogue
 
 The takeover proposal is due to go before Nottingham Trent Chancellor Sir
 Michael Parkinson first thing tomorrow morning, after he picks up his dry
