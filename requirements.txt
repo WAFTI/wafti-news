@@ -6,7 +6,7 @@ Unidecode==0.04.19
 blinker==1.4
 docutils==0.13.1
 feedgenerator==1.9
-pelican==3.6.3
+pelican==3.7.0
 python-dateutil==2.6.0
 pytz==2016.10
 six==1.10.0
