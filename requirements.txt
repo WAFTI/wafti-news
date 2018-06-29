@@ -8,7 +8,7 @@ docutils==0.14
 feedgenerator==1.9
 pelican==3.7.1
 python-dateutil==2.7.3
-pytz==2018.4
+pytz==2018.5
 six==1.11.0
 smartypants==2.0.1
 typogrify==2.0.7
