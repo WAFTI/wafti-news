@@ -9,6 +9,6 @@ feedgenerator==1.9
 pelican==4.0.1
 python-dateutil==2.7.5
 pytz==2018.7
-six==1.11.0
+six==1.12.0
 smartypants==2.0.1
 typogrify==2.0.7
