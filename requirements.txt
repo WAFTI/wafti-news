@@ -2,7 +2,7 @@ Jinja2==2.11.3
 Markdown==3.3.3
 MarkupSafe==1.1.1
 Pygments==2.7.4
-Unidecode==1.1.2
+Unidecode==1.2.0
 blinker==1.4
 docutils==0.16
 feedgenerator==1.9.1
