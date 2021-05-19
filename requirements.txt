@@ -1,4 +1,4 @@
-Jinja2==3.0.0
+Jinja2==3.0.1
 Markdown==3.3.4
 MarkupSafe==2.0.1
 Pygments==2.9.0
